@@ -30,7 +30,8 @@
       background: #0b0b0b;
       display: flex;
       justify-content: space-between;
-      gap: 2rem;
+      flex-flow:row nowrap;
+      gap: 1rem;
       padding: 1rem 0.5rem;
       position: sticky;
       top: 0;
@@ -40,7 +41,7 @@
     nav a {
       color:#569eff;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 400;
       padding: 0.5rem 1rem;
       border-radius: 6px;
       transition: all 0.5s linear;
@@ -129,8 +130,11 @@
     @media all and (max-width:600px) {
         .edit {
           display:flex;
+          justify-content:center;
+          align-items:center;
           flex-flow: column wrap;
           width:100%;
+          padding-right:1px;
         }
     }
     .portfolio {
