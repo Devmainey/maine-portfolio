@@ -41,7 +41,7 @@
     nav a {
       color:#569eff;
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 600;
       padding: 0.5rem 1rem;
       border-radius: 6px;
       transition: all 0.5s linear;
@@ -50,6 +50,23 @@
       background: var(--primary);
       color: var(--bg); 
     }
+    @media all and (max-width:500px) {
+      nav {
+        width:100%;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:center;
+        align-items:center;
+      }
+    .navigation {
+      width:80%;
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content:center;
+      align-items:center}
+    }
+      
+    
     .hero {
       background: radial-gradient(circle at top left, #00ffc3 0%, #0e0e0e 70%);
       text-align: center;
@@ -185,7 +202,7 @@
 <body>
   <nav>
     <div><img src="mainefavicon.png" alt="maine icon" width="90vw" height="70vh"></div>
-    <div>
+    <div class="navigation">
     <a href="#about">About</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
