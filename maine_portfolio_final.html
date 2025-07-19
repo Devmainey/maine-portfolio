@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> </M∆INE > | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="mainefavicon.png" >
+  <style>
+    :root {
+      --primary: #00ffc3;
+      --bg: #0e0e0e;
+      --accent: #1e1e1e;
+      --text: #ffffff;
+      --muted: #cccccc;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    nav {
+      background: #0b0b0b;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 1rem 0.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color:#569eff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: all 0.5s linear;
+    }
+    nav a:hover {
+      background: var(--primary);
+      color: var(--bg); 
+    }
+    .hero {
+      background: radial-gradient(circle at top left, #00ffc3 0%, #0e0e0e 70%);
+      text-align: center;
+      padding: 5rem 1.5rem 6rem;
+      
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #0e0e0e;
+      background: -webkit-linear-gradient(45deg, #00ffc3, #00e0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      color: #dddddd;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .hero a {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #00ffc3;
+      color: #0e0e0e;
+      font-weight: 700;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s linear;
+    }
+    .hero a:hover {
+      background-color: #569eff;
+      transform: scale(1.1);
+      box-shadow: 3px 3px 7px #00e0ff;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeIn 1s ease;
+    }
+    .section h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .section h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: var(--primary);
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+    }
+    .section p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .edit {
+     outline:2px ridge #569eff;
+      padding:7px;
+      align-items: center;
+      margin-bottom: 10vh;
+     
+    }
+
+    .edit img {
+      width:20rem;
+      height:20rem;
+      float:right;
+      clip-path: circle(45%);
+      shape-outside: circle(50%);
+    }
+
+    @media all and (max-width:600px) {
+        .edit {
+          display:flex;
+          flex-flow: column wrap;
+          width:100%;
+        }
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 195, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .portfolio img:hover {
+      transform: scale(1.03);
+    }
+    .contact a {
+      color: #569eff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin: 1rem 1rem 0 0;
+      background-color: #1e1e1e;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: background 0.5s;
+    }
+    .contact a:hover {
+      background-color: var(--primary);
+      color: #0e0e0e;
+    }
+    footer {
+      background: var(--accent);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      border-top: 1px solid #333;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><img src="mainefavicon.png" alt="maine icon" width="90vw" height="70vh"></div>
+    <div>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div style="margin-bottom: 1rem;">
+  <span style="font-size: 1.9rem; font-weight: 900; color: #0e0e0e; background: linear-gradient(circle at top left, #00ffc3,#00b7ff ); padding: 0.3rem 1rem; border-radius: 8px; letter-spacing: 3px; box-shadow: 10px 10px 15px #569eff; display: inline-block;">&lt;/DEV_M&Delta;INE&gt;</span>
+</div>
+
+    <h1>Transforming Ideas into Digital Masterpiece</h1>
+    <p>Creative Web & Graphic Designer bringing bold visuals to life.</p>
+    <a href="#portfolio">Explore some of my Designs</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="edit">
+      <img src="maine1.jpg" alt="maine's photo"  >
+    <p>Hi, I'm Maine. A creative  web designer and developer. I specialize in crafting clean, mobile-friendly websites and eye-catching graphic designs for brands, businesses, and individuals. Whether you're looking for a one-page website, a stunning flyer, or something unique, I'm here to bring your ideas to life. Let's build something awesome together. </p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Featured projects</h2>
+    <div class="portfolio">
+      <img src="web homepage design.png" alt="web home page design" height="450px">
+      <img src="Empire auto car-wash.png" alt="Empire Auto Car Wash Flyer">
+      <img src="Gloxyb's fragrance  Flyer.png" alt="GloxyB's Fragrance Flyer">
+      <img src="maine's website flier.png" alt="maine's website flier.png" >
+      <img src="gloxyb's july flier.png" alt="gloxyb's july flier.png">
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Get In-touch</h2>
+    <a href="https://wa.me/2348082246036" target="_blank">📞 WhatsApp</a>
+    <a href="mailto:favyobixon@gmail.com">✉️ favyobixon@gmail.com</a>
+    <a href="https://instagram.com/maine_zz" target="_blank">📸 Instagram</a>
+  </section>
+
+  <footer>
+    &copy; 2025 &lt;/Dev_maine&gt;. All rights reserved.
+  </footer>
+</body>
+</html>
